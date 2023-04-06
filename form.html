@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <br>Fill the following form given the university administration <br><br></P>
+    <form action="">
+        <div class="first_name"> 
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" name="fname" placeholder="Shehan" required>
+        </div> <!--First name-->
+        <br>
+
+        <div class="last_name">
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" name="lname" placeholder="Rathnayake" Required>
+        </div> <!--Last name-->
+        <br>
+
+        <div class="email">
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" placeholder="user@email.com">
+        </div> <!--Email-->
+        <br>
+
+        <div class="telephone">
+            <label for="tele">Contact No: </label>
+            <input type="tel" id="tele" name="telephone" placeholder="+94-XX-XXXXXXX" pattern="[+]{1}94[-]{1}[0-9]{2}[-]{1}[0-9]{7}" required>
+        </div> <!--Telephone-->
+        <br>
+
+        <div class="password">
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" placeholder="">
+        </div> <!--Password-->
+        <br>
+
+        <div class="birthday">
+            <label for="birthday">Birth Date: </label>
+            <input type="date" id="bdate" name="bdate" required>
+        </div> <!--Birth date-->
+        <br>
+
+        <div class="gender">
+            <p>Gender: </p>
+            <label for="male">Male </label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="female">Female </label>
+            <input type="radio" id="female" name="gender" value="female" required>
+        </div> <!--Gender-->
+        <br><br>
+
+        <div class="field">
+            <label for="field">Field: </label>
+            <select id="field" name="name" size="0">
+                <option value="null">Select a field</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Civil">Civil</option>
+                <option value="Electrical">Electrical</option>
+                <option value="Chemical">Chemical</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Material">Material</option>
+            </select>
+        </div> <!--field-->
+        <br>
+
+        <div class="scholar">
+            <p>Scholarship Granted: </p>
+            <label for="mahapola">Mahapola </label>
+            <input type="checkbox" id="mahapola" name="scholarship" value="mahapola">
+            <label for="bursary">Bursary </label>
+            <input type="checkbox" id="bursary" name="scholarship" value="bursary">
+        </div> <!--Scholar-->
+        <br><br>
+
+        <div class="add-info">
+            <label for="add-info">Additional Information: </label>
+            <textarea id="add-info" name="add-info" rows="5" cols="30" placeholder="Write here"></textarea>
+        </div> <!--add-info-->
+        <br><br>
+
+        <div class="buttons">
+            <input type="submit" id="submit" value="Submit">
+            <input type="reset">
+        </div> <!--Buttons-->
+
+    </form>
+</body>
+</html>
